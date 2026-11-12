@@ -9,7 +9,7 @@
  hr{margin:36px 0;border:0;border-top:1px solid #e5e5ea}
 </style></head><body>
 <h1>Политика конфиденциальности приложения «Радио ТВ»</h1>
-<p class="muted">Пакет: <code>de.privet.radiotv</code>. Последнее обновление: 12 ноября 2026 г.</p>
+<p class="muted">Пакет: <code>de.privet.radiotv</code>. Последнее обновление: 12 ноября 2026 г. (v1.4)</p>
 
 <h2>Коротко</h2>
 <p>Приложение не собирает и не передаёт никаких персональных данных. Нет аккаунтов, нет аналитики, нет рекламы, нет трекеров, нет встроенных покупок.</p>
@@ -22,13 +22,18 @@
 </ul>
 
 <h2>Разрешения</h2>
-<p>Приложение запрашивает только доступ в интернет и состояние сети. Доступа к файлам, микрофону, камере, контактам, местоположению нет.</p>
+<p>Приложение использует доступ в интернет и к состоянию сети.</p>
+<p>Для заставки, которая движется в ритм музыки, приложение просит разрешение «Запись аудио». Оно нужно системному компоненту Android <code>Visualizer</code>, чтобы анализировать звук, который воспроизводит само приложение. <b>Микрофон не используется, звук не записывается, не сохраняется и никуда не передаётся</b> — анализ идёт на устройстве в реальном времени. Разрешение можно не давать: тогда заставка работает без привязки к ритму.</p>
+<p>Доступа к файлам, камере, контактам, местоположению нет.</p>
 
 <h2>Дети</h2>
 <p>Приложение не ориентировано на детей младше 13 лет и не собирает данных о них.</p>
 
 <h2>Права на контент</h2>
 <p>Приложение не является вещателем и не хранит аудиопотоки. Все станции принадлежат их правообладателям. Справочник станций предоставлен сообществом radio-browser.info. По вопросу удаления станции из каталога: <a href="mailto:info@privet.fr">info@privet.fr</a>.</p>
+
+<h2>Использованные материалы</h2>
+<p>Видео камина в заставке: «free video library», лицензия <a href="https://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a>, источник — <a href="https://commons.wikimedia.org/wiki/File:Fantastic-fireplace-fire-chimney-hearth-_background_-_texture_-_motion_graphics_-_free_video_library.webm">Wikimedia Commons</a>. Изменения: бесшовная петля, цветокоррекция, эффекты в реальном времени.</p>
 
 <h2>Изменения</h2>
 <p>Актуальная версия политики всегда доступна на этой странице. Существенные изменения будут отражены в описании обновления приложения.</p>
@@ -43,7 +48,8 @@
 <p><b>Station directory.</b> On launch the app queries the public directory <a href="https://www.radio-browser.info/">radio-browser.info</a> with a plain HTTP request carrying no device identifiers or location.</p>
 <p><b>Audio streams.</b> When you pick a station, the app connects directly to that broadcaster’s public stream. The broadcaster sees your IP address, as any website would; that processing is governed by the station’s own policy.</p>
 <p><b>Local storage.</b> The last played station and a cached station list are stored on the device only, and removed when the app is uninstalled.</p>
-<p><b>Permissions.</b> Internet and network state only. No access to files, microphone, camera, contacts or location.</p>
+<p><b>Permissions.</b> Internet and network state. For the music-reactive screensaver the app asks for “Record audio”: Android’s <code>Visualizer</code> requires it to analyse the sound the app itself is playing. <b>The microphone is not used; no audio is recorded, stored or transmitted</b> — analysis happens on the device in real time. You may decline; the screensaver then runs without beat sync. No access to files, camera, contacts or location.</p>
+<p><b>Credits.</b> Fireplace footage: “free video library”, <a href="https://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a>, via <a href="https://commons.wikimedia.org/wiki/File:Fantastic-fireplace-fire-chimney-hearth-_background_-_texture_-_motion_graphics_-_free_video_library.webm">Wikimedia Commons</a>; modified (seamless loop, grading, real-time effects).</p>
 <p><b>Content rights.</b> The app is not a broadcaster and does not host streams. Stations belong to their owners; the directory is provided by the radio-browser.info community. Removal requests: <a href="mailto:info@privet.fr">info@privet.fr</a>.</p>
 <p><b>Contact.</b> Dmitry Melikhov, France — <a href="mailto:info@privet.fr">info@privet.fr</a></p>
 </body></html>
